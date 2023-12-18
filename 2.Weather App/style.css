@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: grey;
+  height: 100vh;
+}
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main {
+  width: 100vw;
+  max-width: 500px;
+  border-radius: 20px;
+  /*background: linear-gradient(135deg,#00feba, #5b548a);*/
+  background: linear-gradient(135deg, orange, skyblue);
+  padding: 40px 35px;
+  text-align: center;
+  margin: auto;
+  /* margin-top: 25vh; */
+  color: #fff;
+}
+.heading {
+  text-align: left;
+  font-size: 18px;
+}
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search input {
+  border: 0;
+  outline: 0;
+  flex: 1;
+  margin-right: 16px;
+  height: 35px;
+  border-radius: 20px;
+  text-align: center;
+  color: seagreen;
+  font-weight: bold;
+  font-size: 18px;
+  background: #ebfffc;
+}
+
+.search button {
+  border-radius: 50%;
+  border: 0;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.search img {
+  width: 20px;
+}
+.rainimg img {
+  width: 20vw;
+}
+.temperature h1 {
+  font-size: 50px;
+  margin-top: 0px;
+  padding: 0px;
+  padding-bottom: 0px;
+}
+.city {
+  font-size: 20px;
+  /*border: 2px solid red;*/
+  padding: 0px;
+  margin: 0px;
+}
+.city h2 {
+  font-size: 30px;
+  padding-top: 0px;
+}
+.footer {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.humidity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.wind {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.text h2 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+#temperatureText{
+	font-size: 6vw;
+}
+#feelsLikeText{
+	font-size: 4vw;
+}
+.tempandFeel{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+@media (max-width: 460px) {
+  .footer {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+}
+@media (max-width: 384px) {
+  .search input {
+    width: 100px;
+  }
+  .search button {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+  }
+  .heading {
+    text-align: left;
+    font-size: 14 px;
+  }
+}
