@@ -3,9 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quote Generator</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .appArea{
+        background-color: rgb(228, 227, 227);
+        padding: 2vh 3vw;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 20px;
+        }
+        #heading{
+            text-align: center;
+            font-size: 4vw;
+            position: relative;
+        }
+        #heading::after{
+            content: '';
+            height: 1vh;
+            width: 15vw;
+            background-color: rgb(81, 81, 203);
+            position: absolute;
+            bottom: -2.5vh;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        #quote{
+            margin-top: 7vh;
+            text-align: center;
+            font-size: 2.7vw;
+        }
+        #author{
+            text-align: right;
+            font-size: 1.8vw;
+            position: relative;
+        }
+        .btn{
+            margin-top: 2vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: row;
+        }
+        #quotebtn{
+            font-size: 2vw;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            padding: 1.4vh 1vw;
+            margin-top: 4vh;
+            margin-left: 1vw;
+            transition: .2s ease-in;
+        }
+        
+        #twitterbtn{
+            padding: 1.4vh 1vw;
+            border: none;
+            margin-left: 2vw;
+            font-size: 2.5vw;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1vw;
+            background-color: transparent;
+            transition: .2s ease-in;
+        }
+        #twitterbtn img{
+            width: 3vw;
+        }
+        #twitterbtn:hover{
+            background-color: rgb(239, 236, 236);
+        }
+        #quotebtn:hover{
+            background-color: rgb(239, 236, 236);
+            color: rgb(46, 46, 46);
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="appArea">
+        <h2 id="heading">New Quote</h2>
+        <div class="quoteArea">
+        <h3 id="quote"></h3>
+        <div id="author"></div>
+        </div>
+        <div class="btn">
+        <button id="quotebtn">New Quote</button>
+        <button id="twitterbtn"><img src="twitter.png" alt="">Tweet</button>
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
