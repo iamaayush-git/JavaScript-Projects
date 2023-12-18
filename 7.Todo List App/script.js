@@ -1,4 +1,3 @@
-// To do App
 let button = document.querySelector("#button");
 let text = document.querySelector("#text");
 let parent_ul = document.querySelector("#parent_ul");
