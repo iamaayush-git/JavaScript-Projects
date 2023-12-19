@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <style>
+      body {
+        background-color: lightblue;
+      }
+      .appArea {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        min-height: 50vh;
+        width: 50vw;
+        background-color: whitesmoke;
+        border-radius: 20px;
+        padding: 3vh 2vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        text-align: center;
+      }
+      h3 {
+        font-size: 2vw;
+      }
+      #input {
+        height: 5vh;
+        width: 18vw;
+        font-size: 2vw;
+        border-color: rgb(224, 197, 146);
+        padding: 1vh 1vw;
+      }
+      button {
+        padding: 2vh 2vw;
+        border-radius: 10px;
+        border: none;
+        margin-top: 4vh;
+        background-color: rgb(112, 112, 247);
+        font-size: 1.7vw;
+        color: white;
+        box-shadow: 7px 5px 10px grey;
+        transition: 0.3s ease-in;
+        margin-top: 5vh;
+      }
+      button:hover {
+        background-color: rgb(137, 136, 136);
+      }
+      #qrImg{
+        margin-top: 5vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="appArea">
+      <h3>Enter your text or URL</h3>
+      <input
+        type="text"
+        id="input"
+        placeholder="Enter text here"
+        autofocus
+      /><br />
+      <img
+        src=""
+        alt=""
+        id="qrImg"
+        width="100vw"
+      /> <br>
+      <button id="btn">Generate</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
