@@ -1,161 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snacks Bar</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: grey;
+        /* position: relative; */
+      }
+      button {
+        font-size: 1.7vw;
+        padding: 1vh 1.5vw;
+        margin-left: 2vw;
+        color: white;
+        background-color: green;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      #btn {
+        margin-top: 5vh;
+        margin-left: 3vw;
+      }
+      .success {
+        position: absolute;
+        height: 10vh;
+        width: 20vw;
+        background-color: white;
+        color: green;
+        font-size: 3vw;
+        padding-left: 2vw;
+        font-weight: 500;
+        border-radius: 10px;
+        margin-top: 2vh;
+        position: relative;
+        animation: anim 0.5s linear;
+      }
+      .success::after {
+        position: absolute;
+        content: "";
+        height: 1vh;
+        width: 100%;
+        background-color: green;
+        bottom: 0;
+        left: 0;
+        animation: progressbar 5s linear;
+      }
+      .error {
+        position: absolute;
+        height: 10vh;
+        width: 20vw;
+        background-color: white;
+        color: red;
+        font-size: 3vw;
+        padding-left: 2vw;
+        font-weight: 500;
+        border-radius: 10px;
+        margin-top: 2vh;
+        position: relative;
+        animation: anim 0.5s linear;
+      }
+      .error::after {
+        content: "";
+        height: 1vh;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: red;
+        animation: progressbar 5s linear;
+      }
+      .invalid {
+        position: absolute;
+        left: 0;
+        height: 10vh;
+        width: 20vw;
+        background-color: white;
+        color: orange;
+        font-size: 3vw;
+        padding-left: 2vw;
+        font-weight: 500;
+        border-radius: 10px;
+        margin-top: 2vh;
+        position: relative;
+        animation: anim 0.5s linear;
+      }
+      @keyframes anim {
+        0% {
+          left: 60px;
         }
-        body{
-            background-color: grey;
-            /* position: relative; */
+        100% {
+          left: 0px;
         }
-        button{
-            font-size: 1.7vw;
-            padding: 1vh 1.5vw;
-            margin-left: 2vw;
-            color: white;
-            background-color: green;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
+      }
+      .invalid::after {
+        content: "";
+        position: absolute;
+        height: 1vh;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: orange;
+        animation: progressbar 5s linear;
+      }
+      @keyframes progressbar {
+        100% {
+          width: 0;
         }
-        #btn{
-            margin-top: 5vh;
-            margin-left: 3vw;
-        }
-        .success{
-            position: absolute;
-            height: 10vh;
-            width: 20vw;
-            background-color: white;
-            color: green;
-            font-size: 3vw;
-            padding-left: 2vw;
-            font-weight: 500;
-            border-radius: 10px;
-            margin-top: 2vh;
-            position: relative;
-            animation: anim 0.5s linear;
-        }
-        .success::after{
-            position: absolute;
-            content: '';
-            height: 1vh;
-            width: 100%;
-            background-color: green;
-            bottom: 0;
-            left: 0;
-            animation: progressbar 5s linear;
-        }
-        .error{
-            position: absolute;
-            height: 10vh;
-            width: 20vw;
-            background-color: white;
-            color: red;
-            font-size: 3vw;
-            padding-left: 2vw;
-            font-weight: 500;
-            border-radius: 10px;
-            margin-top: 2vh;
-            position: relative;
-            animation: anim 0.5s linear;
-        }
-        .error::after{
-            content: '';
-            height: 1vh;
-            width: 100%;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            background-color: red;
-            animation: progressbar 5s linear;
-        }
-        .invalid{
-            position: absolute;
-            left: 0;
-            height: 10vh;
-            width: 20vw;
-            background-color: white;
-            color: orange;
-            font-size: 3vw;
-            padding-left: 2vw;
-            font-weight: 500;
-            border-radius: 10px;
-            margin-top: 2vh;
-            position: relative;
-            animation: anim 0.5s linear;
-        }
-        @keyframes anim {
-            /* 0%{
-                left : 50px;
-            }
-            25%{
-                left : 38px;
-            }
-            50%{
-                left: 25px;
-            }
-            75%{
-                left: 12px;
-            }
-            100%{
-                left: 0px;
-            } */
-            0%{
-                left: 60px;
-            }
-            /* 50%{
-                left: 25px;
-            } */
-            100%{
-                left: 0px;
-            }
-        }
-        .invalid::after{
-            content: '';
-            position: absolute;
-            height: 1vh;
-            width: 100%;
-            bottom: 0;
-            left: 0;
-            background-color: orange;
-            animation: progressbar 5s linear;
-        }
-        @keyframes progressbar{
-            100%{
-                width: 0;
-            }
-        }
+      }
 
-        .notificationBox{
-            position: relative;
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            bottom: 5%;
-            right: 5%;
-        }
+      .notificationBox {
+        position: relative;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        bottom: 5%;
+        right: 5%;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="btn">
-    <button class="notify">Success</button>
-    <button class="notify">Error</button>
-    <button class="notify">Invalid</button>
-    <div class="notificationBox">
-        <!-- <div class="success">success</div>
-        <div class="error">error</div>
-        <div class="invalid">Invalid</div> -->
+      <button class="notify">Success</button>
+      <button class="notify">Error</button>
+      <button class="notify">Invalid</button>
+      <div class="notificationBox"></div>
     </div>
-    </div>
-</body>
-<script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>
