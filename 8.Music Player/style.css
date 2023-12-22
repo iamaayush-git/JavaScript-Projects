@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: wheat;
+}
+/* nav bar */
+nav ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1vw;
+  background-color: black;
+  color: white;
+  font-size: 1.5vw;
+  list-style: none;
+  padding: 2vh 3vw;
+}
+nav ul img {
+  height: 5%;
+  width: 5%;
+}
+.song-img {
+  height: 4vw;
+  width: 4vw;
+  border-radius: 50%;
+}
+.container {
+  width: 70%;
+  background-image: url("bg.jpg");
+  background-position: left;
+  background-size: cover;
+  margin-top: 5vh;
+  padding: 7vh 7vw;
+  border-radius: 20px;
+  /* min-height: 70vh; */
+}
+.container h1 {
+  color: white;
+  font-size: 2.5vw;
+}
+.song-div {
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 20px;
+  margin-top: 2vh;
+  display: flex;
+  gap: 15vw;
+  align-items: center;
+  padding: 1vh 2vw;
+  font-size: 1.7vw;
+  font-weight: bold;
+}
+.song-div:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+.song-container {
+  margin-top: 5vh;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 90vh; */
+}
+.bottom {
+  margin-top: 5vh;
+  position: sticky;
+  background-color: black;
+  bottom: 0px;
+  width: 100vw;
+  height: 13vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+.range {
+  width: 90vw;
+}
+.icons {
+  margin-top: 15px;
+}
+.icons i,
+input {
+  padding: 0px 7px;
+  cursor: pointer;
+}
