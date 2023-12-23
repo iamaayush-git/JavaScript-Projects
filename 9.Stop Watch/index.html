@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Watch</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: aliceblue;
+      }
+      .appArea {
+        height: 50vh;
+        width: 50vw;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(rgb(120, 232, 120), rgb(103, 100, 94));
+        border-radius: 20px;
+        text-align: center;
+        color: white;
+      }
+      .appArea h2 {
+        margin-top: 6vh;
+        font-size: 7vw;
+      }
+      .controls {
+        margin-top: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+      }
+      #stop {
+        width: 6vw;
+      }
+      #start {
+        width: 6.5vw;
+      }
+      #reset {
+        width: 6vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="appArea">
+      <h2 id="output">00:00:00</h2>
+      <div class="controls">
+        <img src="stop.png" alt="" id="stop" />
+        <img src="start.png" alt="" id="start" />
+        <img src="reset.png" alt="" id="reset" />
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
