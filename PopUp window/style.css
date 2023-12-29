@@ -1,67 +1,67 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: rgb(77, 75, 75);
-    /* display: flex;
+body {
+  background-color: rgb(77, 75, 75);
+  /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; */
 }
-.showpopup{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 2vw;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    padding: 1vh 1vw;
-    color: green;
+.showpopup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2vw;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 1vh 1vw;
+  color: green;
 }
-.popup{
-    padding: 4vh 1vw;
-    text-align: center;
-    height: 50vh;
-    width: 40vw;
-    background-color: antiquewhite;
-    border-radius: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.popup {
+  padding: 4vh 1vw;
+  text-align: center;
+  height: 50vh;
+  width: 40vw;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.visible{
-    display: none;
+.visible {
+  display: none;
 }
-.anima{
-    animation: pop 1s linear;
+.anima {
+  animation: pop 1s linear;
 }
 @keyframes pop {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-.popup img{
-    width: 7vw;
+.popup img {
+  width: 7vw;
 }
-.popup p{
-    font-size: 4vw;
+.popup p {
+  font-size: 4vw;
 }
-.okay{
-    font-size: 2vw;
-    padding: 1vh 1vw;
-    border: none;
-    border-radius: 10px;
-    color: orange;
-    font-weight: 600;
-    background-color: rgb(228, 226, 226);
-    cursor: pointer;
-    margin-top: 2vh;
+.okay {
+  font-size: 2vw;
+  padding: 1vh 1vw;
+  border: none;
+  border-radius: 10px;
+  color: orange;
+  font-weight: 600;
+  background-color: rgb(228, 226, 226);
+  cursor: pointer;
+  margin-top: 2vh;
 }
