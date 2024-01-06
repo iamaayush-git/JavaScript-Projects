@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .main {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(46, 65, 65);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .appArea {
+        height: 50vh;
+        width: 50vw;
+        color: green;
+        background-color: whitesmoke;
+        box-shadow: 10px 5px 14px grey;
+        text-align: center;
+        border-radius: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .appArea h2 {
+        font-size: 3vw;
+      }
+      .appArea h1 {
+        font-size: 4vw;
+        text-decoration: underline;
+      }
+      input {
+        height: 8vh;
+        width: 30vw;
+        margin-top: 3vh;
+        font-size: 1.7vw;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: rgb(102, 101, 101);
+        border: 0;
+        outline: 0;
+        background-color: transparent;
+        letter-spacing: 0.2vw
+      }
+      button {
+        padding: 1vh 2vw;
+        margin-top: 4vh;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        background-color: green;
+        font-size: 2vw;
+        transition: 0.2s;
+      }
+      button:hover {
+        background-color: grey;
+        cursor: pointer;
+      }
+      img {
+        width: 4.6vw;
+      }
+      .txtimg{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1vh 2vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="appArea">
+        <h2>Random</h2>
+        <h1>Password Generator</h1>
+        <div class="txtimg">
+          <input type="text" placeholder="password" id="output"/>
+          <img src="copyimg.png" alt="" id="img"/>
+        </div>
+        <button id="btn">Generate</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
