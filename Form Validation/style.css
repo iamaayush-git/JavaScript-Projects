@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(159, 193, 223);
+}
+.container {
+  height: 60vh;
+  width: 50vw;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.appArea {
+  padding: 10vh 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+  border-radius: 20px;
+}
+.field {
+  font-size: 1.8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1vw;
+}
+button {
+  background-color: orange;
+  color: #ffffff;
+  font-size: 3vh;
+  padding: 1vh 2vw;
+  border: none;
+  cursor: pointer;
+  font-weight: 800;
+  border-radius: 10px;
+}
