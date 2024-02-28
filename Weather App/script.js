@@ -21,7 +21,6 @@ search.addEventListener('click',()=>{
           let temperature = data.main.temp;
           let windSpeed = data.wind.speed;
           let feelslike = data.main.feels_like;
-          console.log(feelslike);
           feelsLikeText.innerText = feelslike +"°"+ " C"
           humidityText.innerText = humidity + "%"
           temperatureText.innerText = temperature +"°"+ " C"
